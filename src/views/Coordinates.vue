@@ -79,6 +79,7 @@ export default {
     },
     onRemoveRow(idx) {
        this.tables.coordinates.items.splice(idx, 1);
+       this.onSave();
     },
     onRowClick(row) {
       this.cancelTableEditables();       

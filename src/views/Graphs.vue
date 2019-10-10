@@ -13,8 +13,8 @@
     
     <div v-if="currentChartId == 2" class="graph__container">
         <graph-bar3d
-            :width="800"
-            :height="600"
+            :width="700"
+            :height="400"
             :axis-min="0"
             :axis-max="50"
             :padding-top="100"
@@ -30,7 +30,7 @@
         </graph-bar3d>
     </div>
     <div v-else class="graph__container">  
-            <div class="reminder">Note: This needs to have to set of coordinates to show the graph.</div>
+            <div class="reminder">Note: This needs to have two set of coordinates to show the graph.</div>
             <graph-line
                 :width="700"
                 :height="400"
