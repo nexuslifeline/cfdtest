@@ -67,7 +67,7 @@ export default {
   methods: {
     hasExistingData() {
       // check local storage for existing data
-      return localStorage.hasOwnProperty('coordinates');
+      return localStorage.hasOwnProperty('coordinates') && this.getExistingData().length;
     },
     getExistingData() {
       const data = JSON.parse(localStorage.getItem('coordinates'));
